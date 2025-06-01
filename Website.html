@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ride the Wake</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: url('Afbeelding van WhatsApp op 2025-05-26 om 18.50.48_c514ce7b.JPG') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: #00bcd4;
+      color: #fff;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0097a7;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #1a1a1a;
+      border-radius: 10px;
+    }
+
+    form label {
+      text-align: left;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+    }
+
+    form button {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #0097a7;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #111;
+    }
+
+    section h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #countdown {
+      font-size: 2rem;
+      margin-top: 1rem;
+      color: #00bcd4;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      margin-top: 2rem;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="ridethewake25.jpg" alt="Ride the Wake 25 logo">
+    <h1>Ride the Wake</h1>
+    <p>The ultimate wakeboard event in Kuurne, Belgium</p>
+    <a href="#register" class="btn">Join the Ride</a>
+  </header>
+
+  <section id="countdown-section">
+    <h2>Countdown to the Event</h2>
+    <div id="countdown">Loading...</div>
+  </section>
+
+  <section id="info">
+    <h2>About the Event</h2>
+    <p>Ride the Wake is a high-energy wakeboard event at Batoo Wakeboard Club. Expect adrenaline, tricks, and good vibes — whether you're riding or cheering from the shore.</p>
+  </section>
+
+  <section>
+    <h2>📍 Location</h2>
+    <p>Batoo Wakeboard Club, Kuurne, Belgium</p>
+    <iframe src="https://www.google.com/maps?q=Batoo+Wakeboard+Club,+Kuurne&output=embed"></iframe>
+  </section>
+
+  <section>
+    <h2>📅 Date</h2>
+    <p>Coming Summer 2025 — Stay Tuned!</p>
+  </section>
+
+  <section>
+    <h2>🎉 Side Activities</h2>
+    <p>It's not just about wakeboarding! Enjoy an unforgettable atmosphere with:</p>
+    <ul style="list-style: none; padding: 0; font-size: 1.2rem;">
+      <li>🎧 Live DJ Sets</li>
+      <li>🎸 Local Bands & Performances</li>
+      <li>🔥 BBQ & Food Stands</li>
+      <li>🪁 Bouncy Castles for Kids</li>
+    </ul>
+    <p>Fun for all ages — bring your friends, family and good vibes!</p>
+  </section>
+
+  <section id="register">
+    <h2>📝 Register Now</h2>
+    <form action="mailto:shredcrevette@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="category">Category</label>
+      <select id="category" name="category" required>
+        <option value="Rookie">Rookie</option>
+        <option value="Advanced">Advanced</option>
+        <option value="Pro">Pro</option>
+      </select>
+
+      <label for="questions">Questions or comments</label>
+      <textarea id="questions" name="questions" rows="4"></textarea>
+
+      <button type="submit">Send Registration</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Follow us on Instagram: <a href="https://instagram.com/ridethewake_be" target="_blank" style="color:#00bcd4">@ridethewake_be</a></p>
+    <p>#ridethewake_be</p>
+  </footer>
+
+  <script>
+    const eventDate = new Date("2025-07-12T12:00:00").getTime();
+    const countdownEl = document.getElementById("countdown");
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance < 0) {
+        countdownEl.innerHTML = "The event has started!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    };
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
